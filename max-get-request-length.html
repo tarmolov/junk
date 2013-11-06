@@ -6,19 +6,23 @@
                 var valid = true;
                 var url = 'http://google.com/?search=';
                 var count = url.length;
+                var isHighBoundary = false;
+
+                // starts with 2000
+                url += Array(2001 - url.length).join(1);
 
                 while (valid) {
-                    url = url + '1';
+                    url = url + Array(11).join(1);
                     anchor.href = url;
-                    count++;
+                    count+=10;
                     valid = anchor.href == url;
 
                     if (count > 100000) {
-                        alert('Test reached 100,000, stopping...');
+                        isHighBoundary = true;
                         valid = false;
                     }
                 }
-                alert('Complete, count = ' + count);
+                document.write('Complete, count = ' + url.length + (isHighBoundary ? ' (test reached 100,000)' : ''));
             }
         </script>
     </head>
