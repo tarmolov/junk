@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function init() {
+                var anchor = document.getElementById('anc');
+                var valid = true;
+                var url = 'http://google.com/?search=';
+                var count = url.length;
+
+                while (valid) {
+                    url = url + '1';
+                    anchor.href = url;
+                    count++;
+                    valid = anchor.href == url;
+
+                    if (count > 100000) {
+                        alert('Test reached 100,000, stopping...');
+                        valid = false;
+                    }
+                }
+                alert('Complete, count = ' + count);
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <a id="anc" href="http://google.com/">Test</a>
+    </body>
+</html>
