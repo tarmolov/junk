@@ -1,0 +1,93 @@
+body {
+    font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-position: center right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    white-space: normal;
+    padding: 8px 25px 8px 8px;
+}
+.tablesorter-default thead .headerSortUp,
+.tablesorter-default thead .tablesorter-headerSortUp,
+.tablesorter-default thead .tablesorter-headerAsc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+}
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+}
+
+.tablesorter-default .header, .tablesorter-default .tablesorter-header {
+    background-image: url(http://192.241.236.31/test4.smartadmin/img/sort_both.png);
+}
+
+.portfolio {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.portfolio td, .portfolio th {
+    text-align: right;
+}
+
+.portfolio td, .portfolio th {
+    text-align: right;
+}
+
+.portfolio .portfolio-title {
+    text-align: left;
+}
+
+.portfolio-title .inner {
+    position: relative;
+    margin-left: 15px;
+}
+
+.portfolio.table .danger td {
+    background: #fbe7e8;
+}
+
+.portfolio.table th {
+    border-bottom: none;
+}
+
+.fx-trend:before {
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    margin-top: -6px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url(./i/fx-trend.png) no-repeat;
+}
+
+.panteon:before {
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    margin-top: -6px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url(./i/panteon.png) no-repeat;
+}
+
+.profit-minus {
+    color: red;
+}
+
+.profit-plus {
+    color: green;
+}
+
+/*.active td, .success td, .danger td {*/
+    /*background: #fff !important;*/
+/*}*/
