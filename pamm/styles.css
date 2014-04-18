@@ -1,7 +1,62 @@
 body {
     font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
     font-size: 14px;
-    margin: 10px;
+    background: #F3F3F3;
+    padding-bottom: 70px;
+}
+
+.bar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 3;
+
+    height: 42px;
+    background: #3276b1;
+}
+
+.header {
+    position: relative;
+    width: 960px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.logo {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 40px;
+    background: url(./i/logo.png) no-repeat;
+}
+
+.menu, .menu ul, .menu li, .actions {
+    display: inline-block;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.actions {
+    position: absolute;
+    right: 0;
+}
+
+.user {
+    margin-right: 10px;
+}
+
+.actions a, .menu li a {
+    color: #fff;
+}
+
+.content {
+    width: 960px;
+    padding-top: 52px;
+    margin: 0 auto;
 }
 
 .tablesorter-default .header,
@@ -29,8 +84,9 @@ body {
 }
 
 .portfolio {
-    max-width: 600px;
+    max-width: 680px;
     margin-top: 10px;
+    background: #fff;
 }
 
 .portfolio td, .portfolio th {
@@ -86,4 +142,12 @@ body {
 
 .profit-plus {
     color: green;
+}
+
+.footer {
+    font-size: 0.9em;
+    width: 960px;
+    margin: 0 auto;
+    line-height: 50px;
+    color: #898f9c;
 }

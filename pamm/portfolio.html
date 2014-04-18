@@ -22,85 +22,129 @@
 </head>
 
 <body>
-    <div class="btn-group btn-group-sm" data-toggle="buttons">
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="option1">День
-        </label>
-        <label class="btn btn-primary active">
-            <input type="radio" name="options" id="option2">Неделя
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="option3">Месяц
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="option4">Год
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="option5">Все время
-        </label>
-    </div>
+    <div id="global-container">
+        <div class="bar">
+            <div class="header">
+                <a href="#">
+                    <div class="logo">ПАММ-пульт</div>
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="portfolio.html">Мой портфель</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои площадки</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="icon-off"></i>
+                <div class="actions">
+                    <a class="user" href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        hevil
+                    </a>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-log-out"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="btn-group btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option1">День
+                </label>
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option2">Неделя
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option3">Месяц
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option4">Год
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option5">Все время
+                </label>
+            </div>
 
-    <table class="table table-bordered portfolio tablesorter">
-        <thead>
-            <tr>
-                <th class="portfolio-title">Cчет</th>
-                <th>Баланс, $</th>
-                <th>Прибыль, $</th>
-                <th>Прибыль, %</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="danger">
-                <td class="portfolio-title"><a class="inner fx-trend" href="http://fx-trend.com/pamm/528977">Hozyin (528977)</a></td>
-                <td>348.94</td>
-                <td class="profit-minus">-67.91</td>
-                <td class="profit-minus">-16.29</td>
-            </tr>
-            <tr class="success">
-                <td class="portfolio-title"><a class="inner fx-trend" href="http://fx-trend.com/pamm/10253">Investobolin (10253)</a></td>
-                <td>1676.99</td>
-                <td class="profit-plus">29.7</td>
-                <td class="profit-plus">1.8</td>
-            </tr>
-            <tr class="active">
-                <td class="portfolio-title"><a class="inner fx-trend" href="http://fx-trend.com/pamm/563732">Ubunt (563732)</a></td>
-                <td>1071.76</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="success">
-                <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/viewPamm/view5000164_825.html">Hermes (5000164)</a></td>
-                <td>402.44</td>
-                <td class="profit-plus">20.38</td>
-                <td class="profit-plus">5.33</td>
-            </tr>
-            <tr class="success">
-                <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/viewPamm/view5000164_825.html">Hermes (5000164)</a></td>
-                <td>402.44</td>
-                <td class="profit-plus">20.38</td>
-                <td class="profit-plus">5.33</td>
-            </tr>
-            <tr class="danger">
-                <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/pamms/page5000106_137.html">Master (5000176)</a></td>
-                <td>405.46</td>
-                <td class="profit-minus">-94.54</td>
-                <td class="profit-minus">-18.91</td>
-            </tr>
-            <tr class="danger">
-                <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/pamms/page5000106_137.html">Master (5000176)</a></td>
-                <td>405.46</td>
-                <td class="profit-minus">-94.54</td>
-                <td class="profit-minus">-18.91</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td class="portfolio-title">ИТОГО</td>
-                <td>3905.59</td>
-                <td class="profit-minus">-112.37</td>
-                <td class="profit-minus">-28.07</td>
-            </tr>
-        </tfoot>
-    </table>
+            <table class="table table-bordered portfolio tablesorter">
+                <thead>
+                    <tr>
+                        <th class="portfolio-title">Cчет</th>
+                        <th>Баланс, $</th>
+                        <th>Прибыль, $</th>
+                        <th>Прибыль, %</th>
+                        <th>% годовых</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="danger">
+                        <td class="portfolio-title"><a class="inner fx-trend" href="http://fx-trend.com/pamm/528977">Hozyin (528977)</a></td>
+                        <td>348.94</td>
+                        <td class="profit-minus">-67.91</td>
+                        <td class="profit-minus">-16.29</td>
+                        <td class="profit-plus">18</td>
+                    </tr>
+                    <tr class="success">
+                        <td class="portfolio-title"><a class="inner fx-trend" href="http://fx-trend.com/pamm/10253">Investobolin (10253)</a></td>
+                        <td>1676.99</td>
+                        <td class="profit-plus">29.7</td>
+                        <td class="profit-plus">1.8</td>
+                        <td class="profit-plus">23</td>
+                    </tr>
+                    <tr class="active">
+                        <td class="portfolio-title"><a class="inner fx-trend" href="http://fx-trend.com/pamm/563732">Ubunt (563732)</a></td>
+                        <td>1071.76</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td class="profit-plus">152</td>
+                    </tr>
+                    <tr class="success">
+                        <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/viewPamm/view5000164_825.html">Hermes (5000164)</a></td>
+                        <td>402.44</td>
+                        <td class="profit-plus">20.38</td>
+                        <td class="profit-plus">5.33</td>
+                        <td class="profit-minus">-16</td>
+                    </tr>
+                    <tr class="success">
+                        <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/viewPamm/view5000164_825.html">Hermes (5000164)</a></td>
+                        <td>402.44</td>
+                        <td class="profit-plus">20.38</td>
+                        <td class="profit-plus">5.33</td>
+                        <td class="profit-minus">-10</td>
+                    </tr>
+                    <tr class="danger">
+                        <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/pamms/page5000106_137.html">Master (5000176)</a></td>
+                        <td>405.46</td>
+                        <td class="profit-minus">-94.54</td>
+                        <td class="profit-minus">-18.91</td>
+                        <td class="profit-minus">20</td>
+                    </tr>
+                    <tr class="danger">
+                        <td class="portfolio-title"><a class="inner panteon" href="http://panteon-finance.com/pamms/page5000106_137.html">Master (5000176)</a></td>
+                        <td>405.46</td>
+                        <td class="profit-minus">-94.54</td>
+                        <td class="profit-minus">-18.91</td>
+                        <td class="profit-minus">56</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="portfolio-title">ИТОГО</td>
+                        <td>3905.59</td>
+                        <td class="profit-minus">-112.37</td>
+                        <td class="profit-minus">-28.07</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="footer">
+            &copy; ПАММ-пульт, 2014
+        </div>
+    </nav>
 </body>
 </html
