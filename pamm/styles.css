@@ -2,7 +2,6 @@ body {
     font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
     font-size: 14px;
     background: #F3F3F3;
-    padding-bottom: 70px;
 }
 
 .bar {
@@ -21,6 +20,7 @@ body {
     height: 42px;
     line-height: 42px;
     margin: 0 auto;
+    padding: 0 10px;
     color: #fff;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .actions {
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 
 .user {
@@ -53,10 +53,19 @@ body {
     color: #fff;
 }
 
+html, body, #global-container {
+    height: 100%;
+}
+
 .content {
     width: 960px;
     padding-top: 52px;
     margin: 0 auto;
+}
+
+.island {
+    padding: 10px;
+    background: #fff;
 }
 
 .tablesorter-default .header,
@@ -84,9 +93,8 @@ body {
 }
 
 .portfolio {
-    max-width: 680px;
     margin-top: 10px;
-    background: #fff;
+    margin-bottom: 0;
 }
 
 .portfolio td, .portfolio th {
@@ -98,6 +106,7 @@ body {
 }
 
 .portfolio .portfolio-title {
+    position: relative;
     text-align: left;
 }
 
@@ -150,4 +159,13 @@ body {
     margin: 0 auto;
     line-height: 50px;
     color: #898f9c;
+}
+
+.glyphicon-warning-sign {
+    position:absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -8px;
+    color: red;
+    cursor: pointer;
 }
