@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <style>
+            .b-rating {
+                font-family: Arial, Sans-Serif;
+            }
+
+            .b-rating__score {
+                position: relative;
+                display: inline-block;
+                font-size: 11px;
+                font-weight: bold;
+                min-width: 20px;
+                padding: 0 0 0 2px;
+                line-height: 18px;
+                text-align: center;
+                vertical-align: bottom;
+                color: #828282;
+                background: #DDD;
+            }
+
+            .b-rating__score:after {
+                position: absolute;
+                top: 0;
+                right: -5px;
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 9px 0 9px 5px;
+                border-color: transparent transparent transparent #DDD;
+                line-height: 0px;
+            }
+
+            .b-rating_type_gold .b-rating__score {
+                color: #664C0E;
+                background: #FFCC00;
+            }
+
+            .b-rating_type_gold .b-rating__score:after {
+                border-color: transparent transparent transparent #ffcc00;
+            }
+
+            .b-rating__ratings {
+                padding-left: 5px;
+                display: inline-block;
+                font-size: 12px;
+                color: #777777;
+                line-height: 18px;
+            }
+
+            .b-rating__reviews {
+                position: relative;
+                font-size: 12px;
+                display: inline-block;
+                margin-left: 15px;
+                line-height: 18px;
+            }
+
+            .b-rating__reviews:before {
+                position: absolute;
+                top: 0;
+                left: -15px;
+                content: '—';
+                line-height: 18px;
+                color: #777777;
+            }
+
+            .b-rating__reviews-link {
+                text-decoration: none;
+            }
+
+            .b-rating_size_big {
+                font-size: 13px;
+            }
+
+            .b-rating_size_big .b-rating__score {
+                font-weight: normal;
+                min-width: 27px;
+                height: 20px;
+                line-height: 20px;
+            }
+
+            .b-rating_size_big .b-rating__score:after {
+                border-width: 10px 0 10px 5px;
+            }
+
+            .b-rating_size_big .b-rating__ratings {
+                padding-left: 15px;
+                line-height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="b-rating b-rating_type_gold">
+            <div class="b-rating__score">9.9</div>
+            <div class="b-rating__ratings">29 оценок</div>
+            <div class="b-rating__reviews">
+                <a href="#" class="b-rating__reviews-link">45 отзывов</a>
+            </div>
+        </div>
+        <p></p>
+        <div class="b-rating">
+            <div class="b-rating__score">6.0</div>
+            <div class="b-rating__ratings">29 оценок</div>
+        </div>
+        <p></p>
+        <div class="b-rating b-rating_type_gold b-rating_size_big">
+            <div class="b-rating__score">9.9</div>
+            <div class="b-rating__ratings">29 оценок</div>
+        </div>
+        <p></p>
+        <div class="b-rating b-rating_size_big">
+            <div class="b-rating__score">6.0</div>
+            <div class="b-rating__ratings">29 оценок</div>
+        </div>
+    </body>
+</html>
