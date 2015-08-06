@@ -1,0 +1,33 @@
+<table border="0">
+            <tr>
+                <td><div>
+                    123
+                </div></td>
+                <td><div>
+                    234
+                </div></td>
+                <td><div>
+                    345
+                </div></td>
+                <td><div>
+                    456
+                </div></td>
+            </tr>
+        </table>
+        <style>
+            div {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        </style>
+        <!--[if lt IE 9]>
+          <style>
+            div {
+                writing-mode: tb-rl; 
+            }
+        </style>
+    
+        <![endif]-->
